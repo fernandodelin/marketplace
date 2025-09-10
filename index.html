@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Sua Loja de Tecnologia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">🛒 TechStore</a>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar produtos..." id="searchInput">
+                    <button onclick="searchProducts()">🔍</button>
+                </div>
+                
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛍️
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+            
+            <nav>
+                <div class="nav-links">
+                    <a href="#home">Início</a>
+                    <a href="#smartphones">Smartphones</a>
+                    <a href="#laptops">Laptops</a>
+                    <a href="#acessorios">Acessórios</a>
+                    <a href="#ofertas">Ofertas</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Bem-vindo à TechStore</h1>
+            <p>Os melhores produtos de tecnologia com preços incríveis!</p>
+            <a href="#produtos" class="cta-button">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <button class="close-cart" onclick="toggleCart()">&times;</button>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+            <button class="checkout-btn" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📧 contato@techstore.com</p>
+                    <p>📱 (11) 99999-9999</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Informações</h3>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Trocas e Devoluções</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+            <p>&copy; 2025 TechStore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"> 
+    </script>
+</body>
+</html>
