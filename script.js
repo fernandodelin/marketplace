@@ -36,14 +36,10 @@ function renderProducts(products) {
         productDiv.className = 'product-item';
 
         productDiv.innerHTML = `
-            <span class="product-image">${product.image}</span>
-            <h3>${product.name}</h3>
-            <p>Preço: R$ ${product.price.toFixed(2)}</p>
-            <p>Categoria: ${product.category}</p>
-            <a href="https://wa.me/?text=Olá! Tenho interesse no produto: ${encodeURIComponent(product.name)}" 
-                target="_blank"
-                class="whatsapp-btn"
-            >
+            <div class="product-image">${product.image}</div>
+            <div class="product-name">${product.name}</div>
+            <div class="product-price">R$${product.price.toFixed(2)}</div
+            <a href="https://wa.me/?text=Olá! Tenho interesse no produto: ${encodeURIComponent(product.name)}" target="_blank" class="whatsapp-btn">
                 Comprar no WhatsApp
             </a>
         `;
