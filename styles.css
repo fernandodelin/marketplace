@@ -75,7 +75,6 @@ nav {
 /* Products Section */
 .products-section {
     padding: 60px 0;
-    border: 2px solid red;
 }
 .section-title {
     text-align: center;
@@ -155,7 +154,6 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
-    border: 2px solid red;
 }
 
 .product-card {
