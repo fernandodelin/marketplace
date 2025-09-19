@@ -31,7 +31,7 @@ const products = [
 ];
 
 // ...existing code...
-const botaoWhatsapp = document.getElementById('whatsapp-btn');
+const linkWhatsapp = "https://wa.me/?text=Olá! Tenho interesse no produto:";
 // Função para renderizar os produtos
 function renderProducts(products) {
     const container = document.getElementById('products-list');
@@ -42,24 +42,25 @@ function renderProducts(products) {
         productDiv.className = 'product-item';
 
         productDiv.innerHTML = `
+            
             <div class="product-image">${product.image}</div>
             <div class="product-name">${product.name}</div>
             <div class="product-price">R$${product.price.toFixed(2)}</div
             <div class="whatsapp-btn">
-                <a href="https://wa.me/?text=Olá! Tenho interesse no produto: ${encodeURIComponent(product.name)}" target="_blank" class="whatsapp-btn">
+                <a href="${linkWhatsapp} ${encodeURIComponent(product.name)}" target="_blank" class="whatsapp-btn">
                     Comprar no WhatsApp
                 </a>
-            </div>
-            <div class="whatsapp-btn">
-                <a href="${product.whatsapp}" target="_blank" class="whatsapp-btn">
+            </div><br><br>
+            <div class="product-price">
+                <a href="${product.whatsapp}" target="_blank">
                     + info no WhatsApp
                 </a>
             </div>
-            <div class="whatsapp-btn">
-                <a href="${product.facebook}" target="_blank" class="whatsapp-btn">
+            <div class="product-price">
+                <a href="${product.facebook}" target="_blank">
                     + info no Facebook
                 </a>
-            </div>  
+            </div> 
         `;
 
         container.appendChild(productDiv);

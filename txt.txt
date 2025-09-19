@@ -17,3 +17,9 @@ Mac Mini 2012
 https://wa.me/p/24213745184993756/553183399609
 
 https://www.facebook.com/marketplace/item/629442436901332/
+
+
+
+Depois editar tira as tag de <br> dentro do codigo de produtos no JS.
+
+
